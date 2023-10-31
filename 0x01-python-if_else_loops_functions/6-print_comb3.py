@@ -4,6 +4,6 @@ for x in range(0, 10):
         if x >= y:
             continue
         elif x == 8 and y == 9:
-             print("{:d}{:d}".format(x, y))
+            print("{:d}{:d}".format(x, y))
         else:
             print("{:d}{:d}, ".format(x, y), end="")
