@@ -1,2 +1,2 @@
 #!/usr/bin/python3
-print("#pythoniscool")
+exec('import logging; logging.critical("#pythoniscool")')
