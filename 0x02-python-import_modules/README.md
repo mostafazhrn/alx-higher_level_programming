@@ -1,0 +1,1 @@
+This is a readme file for the task 0x02 python import modules this tssks consists of 6 sub tasks and four advanced tasks this is part of the alx software enginerring course
