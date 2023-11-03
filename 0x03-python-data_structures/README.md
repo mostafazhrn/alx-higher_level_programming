@@ -1,0 +1,1 @@
+this is a readme file for the task 0x03-python-data_structures this task consists of 14 mandatory tasks and i advanced for the alx software engineering course
