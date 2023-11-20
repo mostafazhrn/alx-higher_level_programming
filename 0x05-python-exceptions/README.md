@@ -1,0 +1,1 @@
+this is a readm file for the task 0x05-python-exceptions for the python programming lang this task consists of 6 mandatory and 4 advanced
