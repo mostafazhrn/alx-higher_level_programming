@@ -1,12 +1,18 @@
 #!/use/bin/python3
-"""This code define class Square to do square generation module."""
+"""this code define class Square"""
 
 
 class Square:
-    """ This start class square with its attributes.
-    size (int), position (tuple), __size."""
+    """This start class square"""
     def __init__(self, size=0, position=(0, 0)):
-        #This shall start the size and position.
+        """This shall start the size and position.
+
+        Args:
+            size (int): the first parameter
+            position (tuple): the second parameter
+        Returns:
+            It shall return squared area.
+        """
         self.__size = size
         self.__position = position
         if type(self.__size) is not int:
@@ -19,33 +25,87 @@ class Square:
             raise TypeError("position must be a tuple of 2 positive integers")
         elif type(self.__position[1]) is not int or self.__position[1] < 0:
             raise TypeError("position must be a tuple of 2 positive integers")
-        """Public instance method: shall define square area."""
+
+        """method define square area"""
     def area(self):
-        """it shall return square area"""
+        """It shall return square area
+
+        Attributes:
+              __size (int): len of square side
+
+        
+        Returns:
+               _area square area
+        """
         return self.__size**2
-    """Public instance method: def size (self):."""
+    
+    """public instance def size (self)"""
+
     @property
     def size(self):
-        """to get it back"""
+        """Getter to get it back.
+
+        Returns:
+               size (int): len squared of side.
+        """
         return self.__size
-    """public instance method: def size(self,value):."""
+    
+    """public instance def size(self,value):"""
     @size.setter
     def size(self, value):
-        """ this shall set it up"""
+        """ Args: this shall set it up.
+
+        value (int): len of side of square
+
+        Attributes:
+                 __size (int): len of side of square
+
+
+        Raises:
+            ValueError: if value < 0
+            TypeError: of value is not int.
+
+        
+        """
+        
         self.__size = value
         if type(value) is not int:
             raise TypeError("size must be an integer")
         elif value < 0:
             raise ValueError("size must be >= 0")
-    """Public instance method: def position(self):."""
+        
+    """Public instance method: def position(self):"""
+    
     @property
     def position(self):
-        """to retrieve it"""
+        """Getter to retrieve the position.
+
+
+        Returns:
+             __position (tuple): horizontal and vertical offset
+        
+        """
         return self.__position
-    """Public instance method: def position(self, value):."""
+            
+    """Public instance method: def position(self, value):"""
     @position.setter
     def position(self, value):
-        """to set it"""
+        """This shall set it.
+
+
+        Args:
+          value (int): shall take two int
+
+
+        Attributes:
+           __position (tuple): horizontal and veritcal offset of sqaure
+
+
+        Raises:
+            TypeError: 3 errors if value not tuple
+
+        
+        """
         self.__position = value
         if type(self.__position) is not tuple or len(self.__position) != 2:
             raise TypeError("position must be a tuple of 2 positive integers")
@@ -53,9 +113,18 @@ class Square:
             raise TypeError("position must be a tuple of 2 positive integers")
         elif type(self.__position[1]) is not int or self.__position[1] < 0:
             raise TypeError("position must be a tuple of 2 positive integers")
-    """Public instance method: of def my_print(self):."""
+    """public instance of def my_print(self):"""
     def my_print(self):
-        """it shall print square with char to stdout."""
+        """It shall print square with char to stdout.
+
+
+        Attributes:
+             __size (int): len of square side
+             __position (tuple): shall represent the veritcal and
+             horizontal offset of square
+
+
+        """
         if self.__size == 0:
             print()
         else:
