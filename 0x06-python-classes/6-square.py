@@ -36,11 +36,30 @@ class Square:
             raise TypeError("size must be an integer")
         elif value < 0:
             raise ValueError("size must be >= 0")
-    """public instance def my_print(self):"""
+    """Public instance method: def position(self):"""
+    @property
+    def position(self):
+        """to retrieve it"""
+        return self.__position
+    """Public instance method: def position(self, value):"""
+    @position.setter
+    def position(self, value):
+        """to set it"""
+        self.__position = value
+        if type(self.__position) is not tuple or len(self.__position) != 2:
+            raise TypeError("position must be a tuple of 2 positive integers")
+        elif type(self.__position[0]) is not int or self.__position[0] < 0:
+            raise TypeError("position must be a tuple of 2 positive integers")
+        elif type(self.__position[1]) is not int or self.__position[1] < 0:
+            raise TypeError("position must be a tuple of 2 positive integers")
+    """public instance of def my_print(self):"""
     def my_print(self):
         """it shall print square with char to stdout"""
         if self.__size == 0:
             print()
         else:
+            for x in range(self.__position[1]):
+                print()
             for x in range(self.__size):
-                print("#" * self.__size)
+                print("{}{}".format(" " * self.__position[0], "#"
+                                    * self.__size))
