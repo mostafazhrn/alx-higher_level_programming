@@ -1,17 +1,24 @@
 #!/use/bin/python3
-"""this code define class Square"""
+"""This module defines the Square class."""
 
 
 class Square:
-    """This start class square"""
+    """This class represents a square."""
+
     def __init__(self, size=0, position=(0, 0)):
-        """This shall start the size and position.
+        """Initialize the Square object.
 
         Args:
-            size (int): the first parameter
-            position (tuple): the second parameter
+            size (int): The size of the square.
+            position (tuple): The position of the square.
+
+        Raises:
+            TypeError: If size is not an integer or position is
+            not a tuple of 2 positive integers.
+            ValueError: If size is less than 0.
+
         Returns:
-            It shall return squared area.
+            None
         """
         self.__size = size
         self.__position = position
@@ -26,85 +33,58 @@ class Square:
         elif type(self.__position[1]) is not int or self.__position[1] < 0:
             raise TypeError("position must be a tuple of 2 positive integers")
 
-        """method define square area"""
     def area(self):
-        """It shall return square area
+        """Calculate the area of the square.
 
-        Attributes:
-              __size (int): len of square side
-
-        
         Returns:
-               _area square area
+            int: The area of the square.
         """
-        return self.__size**2
-    
-    """public instance def size (self)"""
+        return self.__size ** 2
 
     @property
     def size(self):
-        """Getter to get it back.
+        """Get the size of the square.
 
         Returns:
-               size (int): len squared of side.
+            int: The size of the square.
         """
         return self.__size
-    
-    """public instance def size(self,value):"""
+
     @size.setter
     def size(self, value):
-        """ Args: this shall set it up.
+        """Set the size of the square.
 
-        value (int): len of side of square
-
-        Attributes:
-                 __size (int): len of side of square
-
+        Args:
+            value (int): The size of the square.
 
         Raises:
-            ValueError: if value < 0
-            TypeError: of value is not int.
-
-        
+            ValueError: If value is less than 0.
+            TypeError: If value is not an integer.
         """
-        
         self.__size = value
         if type(value) is not int:
             raise TypeError("size must be an integer")
         elif value < 0:
             raise ValueError("size must be >= 0")
-        
-    """Public instance method: def position(self):"""
-    
+
     @property
     def position(self):
-        """Getter to retrieve the position.
-
+        """Get the position of the square.
 
         Returns:
-             __position (tuple): horizontal and vertical offset
-        
+            tuple: The position of the square.
         """
         return self.__position
-            
-    """Public instance method: def position(self, value):"""
+
     @position.setter
     def position(self, value):
-        """This shall set it.
-
+        """Set the position of the square.
 
         Args:
-          value (int): shall take two int
-
-
-        Attributes:
-           __position (tuple): horizontal and veritcal offset of sqaure
-
+            value (tuple): The position of the square.
 
         Raises:
-            TypeError: 3 errors if value not tuple
-
-        
+            TypeError: If value is not a tuple of 2 positive integers.
         """
         self.__position = value
         if type(self.__position) is not tuple or len(self.__position) != 2:
@@ -113,17 +93,12 @@ class Square:
             raise TypeError("position must be a tuple of 2 positive integers")
         elif type(self.__position[1]) is not int or self.__position[1] < 0:
             raise TypeError("position must be a tuple of 2 positive integers")
-    """public instance of def my_print(self):"""
+
     def my_print(self):
-        """It shall print square with char to stdout.
+        """Print the square to stdout.
 
-
-        Attributes:
-             __size (int): len of square side
-             __position (tuple): shall represent the veritcal and
-             horizontal offset of square
-
-
+        Returns:
+            None
         """
         if self.__size == 0:
             print()
