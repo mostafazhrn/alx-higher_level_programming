@@ -18,16 +18,16 @@ class Square:
             raise TypeError("position must be a tuple of 2 positive integers")
         elif type(self.__position[1]) is not int or self.__position[1] < 0:
             raise TypeError("position must be a tuple of 2 positive integers")
-        """method define square area"""
+        """Public instance method: shall define square area"""
     def area(self):
         """it shall return square area"""
         return self.__size**2
-    """public instance def size (self)"""
+    """Public instance method: def size (self):"""
     @property
     def size(self):
         """to get it back"""
         return self.__size
-    """public instance def size(self,value):"""
+    """public instance method: def size(self,value):"""
     @size.setter
     def size(self, value):
         """ this shall set it up"""
@@ -52,7 +52,7 @@ class Square:
             raise TypeError("position must be a tuple of 2 positive integers")
         elif type(self.__position[1]) is not int or self.__position[1] < 0:
             raise TypeError("position must be a tuple of 2 positive integers")
-    """public instance of def my_print(self):"""
+    """Public instance method: of def my_print(self):"""
     def my_print(self):
         """it shall print square with char to stdout"""
         if self.__size == 0:
