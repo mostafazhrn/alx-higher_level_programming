@@ -1,0 +1,1 @@
+this is a readme file for the task 0x06-python-classes for the alx software enginering course this task consists of 7 mandatory tasks and 4 advanced
