@@ -1,0 +1,1 @@
+this is a readme file for the task 0x08-python-more_classes which consists of 10 mandatory rasks as follows
