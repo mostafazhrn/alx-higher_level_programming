@@ -3,6 +3,9 @@
 based on the previous script
 """
 class Rectangle:
+    """This class have private instance.
+    it shall take two argument width& height.
+    """
     def __init__(self, width=0, height=0):
         """Starting instance of optional widthand height"""
         self.__width = width
