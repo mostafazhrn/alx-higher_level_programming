@@ -1,0 +1,1 @@
+this is a readme file for the task 0x07-python-test_driven_development this tasks consists of 5 mandatory tasks and 3 advanced and its about creating tests for python scripts using docstring and unittest

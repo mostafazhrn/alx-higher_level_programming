@@ -1,0 +1,67 @@
+'' 0-add_integer module test'' module test
+============================
+
+Using ''add_integer'' function
+------------------------------
+This module supplies one function, ''add_integer(a, b)''.
+
+Import function from module
+---------------------------
+
+>>> add_integer = __import__('0-add_integer').add_integer
+
+
+
+Example
+-------
+Test_1: add two integers
+------------------------
+>>> add_integer(1, 2)
+3
+
+Test_2: add two floats
+----------------------
+>>> add_integer(1.0, 2.0)
+3
+
+Test_3: add int and str
+-----------------------
+>>> add_integer(1, "2")
+Traceback (most recent call last):
+    ...
+TypeError: b must be an integer
+
+Test_4: add str and int
+-----------------------
+>>> add_integer("1", 2)
+Traceback (most recent call last):
+    ...
+TypeError: a must be an integer
+
+Test_5: add two strings
+-----------------------
+>>> add_integer("1", "2")
+Traceback (most recent call last):
+    ...
+TypeError: a must be an integer
+
+Test_6: add None and int
+------------------------
+>>> add_integer(None, 2)
+Traceback (most recent call last):
+    ...
+TypeError: a must be an integer
+
+Test_7: add int and None
+------------------------
+>>> add_integer(1, None)
+Traceback (most recent call last):
+    ...
+TypeError: b must be an integer
+
+Test_8: add None and None
+--------------------------
+>>> add_integer(None, None)
+Traceback (most recent call last):
+    ...
+TypeError: a must be an integer
