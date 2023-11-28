@@ -1,0 +1,48 @@
+How to use: 101-lazy_matrix_mul.py
+====================================
+This module test one function, ''lazy_matrix_mul(m_a, m_b)''.
+
+Example
+=======
+>>> lazy_matrix_mul = __import__('101-lazy_matrix_mul').lazy_matrix_mul
+
+Test_1
+=======
+
+>>> import numpy as np
+>>> import random
+>>> np.random.seed(0)
+>>> m_a = np.random.randint(100, size=(2, 3, 5))
+>>> m_b = np.random.randint(100, size=(2, 5, 3))
+
+
+Test_2
+=======
+>>> m_a = [[1, 2], [3, 4]]
+>>> m_b = m_a
+>>> print(lazy_matrix_mul(m_a, m_b))
+[[ 7 10]
+ [15 22]]
+
+
+Test_3
+=======
+>>> print(lazy_matrix_mul(m_a))
+Traceback (most recent call last):
+TypeError: lazy_matrix_mul() missing 1 required positional argument: 'm_b'
+
+Test_4
+=======
+>>> m_a = [
+... [1, 2, 3],
+... [4, 5, 6]
+... ]
+>>> m_b = [
+... [7, 8],
+... [9, 10],
+... [11, 12]
+... ]
+>>> print(lazy_matrix_mul(m_a, m_b))
+[[ 58  64]
+ [139 154]]
+
