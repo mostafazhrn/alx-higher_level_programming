@@ -6,5 +6,8 @@ From creating new instance unless called frstname
 
 
 class LockedClass:
-    """This is the locked cls"""
+    """
+    This is the locked cls only allow user.
+    If lcass named first name
+    """
     __slots__ = ["first_name"]
