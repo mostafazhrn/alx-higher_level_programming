@@ -1,0 +1,41 @@
+How to use: 5-text_indentation.py
+====================================
+This module supplies one function, ''text_indentation(text)''.
+
+Example
+=======
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+Test_1
+=======
+>>> text_indentation(7)
+Traceback (most recent call last):
+TypeError: text must be a string
+
+Test_2
+=======
+>>> text_indentation({"one": 1, "two": 2})
+Traceback (most recent call last):
+TypeError: text must be a string
+
+Test_3
+=======
+>>> text_indentation(None)
+Traceback (most recent call last):
+TypeError: text must be a string
+
+Test_4
+=======
+>>> text_indentation("")
+>>>
+
+Test_5
+======
+
+>>> text_indentation("Hi: my name is. John ain't it?")
+Hi:
+<BLANKLINE>
+my name is.
+<BLANKLINE>
+John ain't it?
+<BLANKLINE>
