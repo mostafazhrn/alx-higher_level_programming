@@ -35,7 +35,7 @@ Test_5
 >>> text_indentation("Hi: my name is. John ain't it?")
 Hi:
 <BLANKLINE>
-my name is.
+ my name is.
 <BLANKLINE>
-John ain't it?
+ John ain't it?
 <BLANKLINE>
