@@ -11,5 +11,4 @@ class LockedClass:
     If lcass named first name
     """
 
-    
     __slots__ = ["first_name"]
