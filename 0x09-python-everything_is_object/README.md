@@ -1,0 +1,1 @@
+this is a read me file for the task 0x09-python-everything_is_object for the alx software engineering course this task consists of 24 mandatory tasks and 3 advanced as folows
