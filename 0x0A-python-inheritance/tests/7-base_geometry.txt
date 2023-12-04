@@ -1,0 +1,33 @@
+"""test case for 7-base_geometry.py"""
+=======================
+
+usage
+-----
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+test_1
+======
+>>> bg = BaseGeometry()
+
+test_2
+======
+>>> bg.integer_validator("my_int", 10)
+>>> bg.integer_validator("width", 10)
+
+test_3
+======
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("width", 10)
+>>> bg.integer_validator("height", 10)
+>>> bg.area()
+Traceback (most recent call last):
+    ...
+Exception: area() is not implemented
+
+test_4
+======
+>>> try:
+...    bg.integer_validator("height", -10)
+... except Exception as x:
+...     print("[{}] {}".format(x.__class__.__name__, x))
+[ValueError] height must be greater than 0
