@@ -1,0 +1,1 @@
+this is a readme file for the task 0x0A-python-inheritance this task consists of 10 sub tasks and 2 mandatory for the alx software engineering program
