@@ -20,3 +20,8 @@ class Student:
             if x in self.__dict__:
                 new_dict[x] = self.__dict__[x]
         return new_dict
+
+    def reload_from_json(self, json):
+        """This func replace attrs of Student"""
+        for x in json:
+            self.__dict__[x] = json[x]
