@@ -1,0 +1,1 @@
+this is a readme file for the task 0x0B-python-input_outputthis task consists of 13 sub tasks and 2 mandatory for the alx software enginering program
