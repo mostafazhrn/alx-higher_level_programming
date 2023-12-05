@@ -1,4 +1,4 @@
-#!/ust/bin/python3
+#!/usr/bin/python3
 """This module writes str to text and return num of chars"""
 
 
