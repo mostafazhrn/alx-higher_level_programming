@@ -1,0 +1,1 @@
+this is a readme file for the task 0x0C-python-almost_a_circle it consists of 19 mandatory tasks and 2 advanced for the alx software engineering program as follows
