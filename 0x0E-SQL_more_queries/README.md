@@ -1,0 +1,1 @@
+This is a readme file for the task 0x0E-SQL_more_queries for the ALX software engineering program this task shall consists of 17 mandatory tasks and 4 advanced as follows
