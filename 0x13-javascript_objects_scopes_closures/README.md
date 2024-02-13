@@ -1,0 +1,1 @@
+This is a readme file for the task 0x13-javascript_objects_scopes_closures for the alx software engineering program which consists of 11 mandatory task and 3 advNCE
