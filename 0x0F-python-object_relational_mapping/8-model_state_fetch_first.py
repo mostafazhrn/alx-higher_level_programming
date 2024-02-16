@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-""" This code shall list all states from database """
+""" This code shall print 1st state from database """
 import sys
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from model_state import State
+from model_state import Base, State
 
 if __name__ == "__main__":
     eng = create_engine('mysql+mysqldb://{}:{}@localhost/{}'
@@ -11,6 +11,6 @@ if __name__ == "__main__":
                                 sys.argv[3]), pool_pre_ping=True)
     Sesh = sessionmaker(bind=eng)
     session = Sesh()
-
-    for state in session.query(State).order_by(State.id):
-        print("{}: {}".format(state.id, state.name))
+    state = session.query(State).first()
+    print("Nothing" if state is None else "{}: {}".format(state.id,
+                                                          state.name))
