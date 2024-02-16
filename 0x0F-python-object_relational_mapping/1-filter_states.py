@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# This code shall list all states in db name start with n
+"""This code shall list all states in db name start with n"""
 import MySQLdb
 import sys
 

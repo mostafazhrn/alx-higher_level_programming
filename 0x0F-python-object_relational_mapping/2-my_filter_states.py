@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# This script shall display all values of table that match arg
+""" This script shall display all values of table that match arg"""
 import MySQLdb
 import sys
 
