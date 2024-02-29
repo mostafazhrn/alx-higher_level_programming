@@ -1,4 +1,4 @@
-#!usr/bin/python3
+#!/usr/bin/python3
 """ THis script shall find a peak num in lst of unsorted ints"""
 
 
