@@ -1,0 +1,1 @@
+this is a readme file for the task 0x15-javascript-web_jquery for the alx software engineering program this project consists of 10 sub tasks as follows
